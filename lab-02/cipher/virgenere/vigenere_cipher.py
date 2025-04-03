@@ -10,7 +10,7 @@ class VigenereCipher:
                 if char.isupper():
                     encrypted_text += chr((ord(char) - ord('A') + key_shift) % 26 + ord('A'))
                 else:
-                    encrypted_text += char((ord(char) - ord('a') + key_shift) % 26 + ord('a'))
+                    encrypted_text += chr((ord(char) - ord('a') + key_shift) % 26 + ord('a'))
                 key_index +=1
             else:
                 encrypted_text += char
